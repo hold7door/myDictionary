@@ -15,7 +15,7 @@ Search words and their meanings and store them in a table for faster access late
 ## Usage
 
 * Get your Oxford Dictionary API key from https://developer.oxforddictionaries.com/
-* You need to create a table to store words you search. Fields <...> are to be substitutd as per user. 
+* You need to create a table to store words you search. Fields <...> are to be substituted as per user. 
 
         mysql> create database <database name>;
         mysql> create table words(word varchar(50),meaning varchar(500),example varchar(1000),type varchar(10),constraint pk_word primary key (word));
