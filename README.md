@@ -23,4 +23,4 @@ Search words and their meanings and store them in a table for faster access late
 * Run script
 
         >python dictionary.py
-* Create a new task in Windows Task Scheduler and in "Action" tab set it to start the notify.py script. You will see two fields, in the "Program/Script" field give the path to "pythonw.exe" (Normally located in your python installation directory. If you are using a Virtual environment(VE) the path should be from the VE.) and for "arguments" field give the path to the "notify.py" script. The argument field should be in quotations. This feature has only been tested on Windows 7.
+* Create a new task in Windows Task Scheduler and in "Action" tab set it to start the notify.py script. You will see two fields, in the "Program/Script" field give the path to "pythonw.exe" (Normally located in your python installation directory. If you are using a Virtual environment(VE) the path should be from the VE.) and for "arguments" field give the path to the "notify.py" script. The argument field should be in quotations. This feature has been tested only on Windows 7.
