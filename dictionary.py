@@ -36,10 +36,10 @@ def meaning(result_dic , wrd):
 	word_type = res[0]['lexicalEntries'][0]['lexicalCategory']
 	examples = []
 	print ("Type: {0}".format(word_type))
-	print ("Meaning : {0} ".format(defin['meanings'][0]))
+	print ("Meaning : {0} ".format(defin['definitions'][0]))
 	print ("Examples :")
 	if nodb == False:
-		db.execute(""" insert into words (word , meaning ,type) values (%s , %s , %s)""" , (wrd , defin['meanings'][0] , word_type))
+		db.execute(""" insert into words (word , meaning ,type) values (%s , %s , %s)""" , (wrd , defin['definitions'][0] , word_type))
 		database.commit()
 	for example in defin['examples']:
 		examples.append(example['text'])
